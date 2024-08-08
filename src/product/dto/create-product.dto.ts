@@ -5,5 +5,6 @@ export class CreateProductDto {
   
     @MinLength(3, { message: 'The name must be at least 3 characters long' })
     name: string;
+    filename: string
 
 }

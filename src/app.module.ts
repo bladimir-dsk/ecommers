@@ -3,6 +3,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ProductModule } from './product/product.module';
+import { RegisterModule } from './register/register.module';
+import { ProfileModule } from './profile/profile.module';
+import { MessageModule } from './message/message.module';
 
 
 @Module({
@@ -19,7 +22,10 @@ import { ProductModule } from './product/product.module';
     }),
     UsersModule,
     AuthModule,
-    ProductModule,],
+    ProductModule,
+    RegisterModule,
+    ProfileModule,
+    MessageModule,],
   controllers: [],
   providers: [],
 })
